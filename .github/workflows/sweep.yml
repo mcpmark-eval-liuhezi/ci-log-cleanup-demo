@@ -1,0 +1,13 @@
+name: Sweep
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log sweep message
+        run: |
+          echo "Starting repository housekeeping sweep"
+          echo "Logs for this run will be cleaned up as part of the demo"
